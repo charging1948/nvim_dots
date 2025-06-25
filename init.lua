@@ -368,16 +368,6 @@ require('lazy').setup({
 
       -- Useful for getting pretty icons, but requires a Nerd Font.
       -- { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
-      {
-        'echasnovski/mini.icons',
-        version = '*',
-        enabled = vim.g.have_nerd_font,
-        config = function(self, opts)
-          require('mini.icons').setup(opts)
-          require('mini.icons').mock_nvim_web_devicons()
-          require('mini.icons').tweak_lsp_kind()
-        end,
-      },
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
@@ -927,7 +917,7 @@ require('lazy').setup({
       require('mini.ai').setup { n_lines = 500 }
 
       -- Shows the current (function-)scope as a line
-      require('mini.indentscope').setup()
+      -- require('mini.indentscope').setup()
 
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
