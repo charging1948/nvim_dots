@@ -1,7 +1,7 @@
 return {
   {
-    'Iogamaster/neocord',
-    event = 'VeryLazy',
-    opts = {},
+    'vyfor/cord.nvim',
+    build = ':Cord update',
+    -- opts = {}
   },
 }
