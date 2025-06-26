@@ -14,6 +14,7 @@ return {
         enabled = true,
         timeout = 3000,
       },
+      lazygit = { enabled = true },
       picker = { enabled = true },
       quickfile = { enabled = true },
       scope = { enabled = true },
@@ -340,6 +341,13 @@ return {
           Snacks.picker.colorschemes()
         end,
         desc = 'Colorschemes',
+      },
+      {
+        '<leader>lg',
+        function()
+          Snacks.lazygit.open()
+        end,
+        desc = 'Open Lazygit',
       },
       -- LSP
       {
