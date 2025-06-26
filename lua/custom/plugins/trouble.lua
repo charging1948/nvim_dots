@@ -35,7 +35,7 @@ return {
         desc = 'Quickfix List (Trouble)',
       },
     },
-    optional = true,
+    -- optional = true,
     specs = {
       'folke/snacks.nvim',
       opts = function(_, opts)
