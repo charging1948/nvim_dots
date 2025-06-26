@@ -26,6 +26,7 @@ return {
           wo = { wrap = true }, -- Wrap notifications
         },
       },
+      zen = { enabled = true },
     },
     keys = {
       -- Top Pickers & Explorer
@@ -348,6 +349,13 @@ return {
           Snacks.lazygit.open()
         end,
         desc = 'Open Lazygit',
+      },
+      {
+        '<leader>tz',
+        function()
+          Snacks.zen.zen()
+        end,
+        desc = 'Toggle Zen-Mode',
       },
       -- LSP
       {
