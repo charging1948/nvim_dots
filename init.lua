@@ -744,7 +744,7 @@ require('lazy').setup({
           },
           neorg = {
             name = 'neorg',
-            module = 'blink.compat.neorg',
+            module = 'blink.compat.source',
           },
         },
       },
