@@ -35,6 +35,7 @@ return {
         lsp_trouble = true,
         blink_cmp = {
           style = 'bordered',
+          border_style = 'bordered',
         },
         native_lsp = {
           enabled = true,
