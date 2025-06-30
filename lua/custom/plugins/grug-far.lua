@@ -11,7 +11,7 @@ return {
         -- there are no required options atm
       }
 
-      vim.keymap.set('n', '<leader>sR', require('grug-far').open, { desc = '[S]earch and [R]eplace' })
+      vim.keymap.set('n', '<leader>sr', require('grug-far').open, { desc = '[S]earch and [R]eplace' })
     end,
   },
 }
