@@ -17,7 +17,8 @@ return {
         gitsigns = true,
         nvimtree = true,
         treesitter = true,
-        notify = false,
+        notify = true,
+        fidget = true,
         harpoon = true,
         grug_far = true,
         lsp_saga = true,
@@ -34,6 +35,7 @@ return {
         },
         lsp_trouble = true,
         blink_cmp = {
+          enabled = true,
           style = 'bordered',
           border_style = 'bordered',
         },
