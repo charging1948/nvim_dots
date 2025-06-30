@@ -14,13 +14,13 @@ return {
     end,
     opts = {
       integrations = {
-        cmp = true,
         gitsigns = true,
         nvimtree = true,
         treesitter = true,
         notify = false,
         harpoon = true,
         grug_far = true,
+        lsp_saga = true,
         mini = {
           enabled = true,
           indentscope_color = 'lavender',
