@@ -514,11 +514,7 @@ require('lazy').setup({
         -- nil_ls = {},
         dockerls = {},
         ['docker_compose_language_service'] = {},
-        qmlls = {
-          settings = {
-            cmd = { 'qmlls', '-E' },
-          },
-        },
+        qmlls = {},
 
         lua_ls = {
           -- cmd = { ... },
