@@ -498,6 +498,8 @@ require('lazy').setup({
           },
         },
         ruff = {},
+        astro = {},
+        unocss = {},
         rust_analyzer = {},
         mdx_analyzer = {},
         sqruff = {},
