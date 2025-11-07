@@ -499,6 +499,7 @@ require('lazy').setup({
         },
         ruff = {},
         astro = {},
+        emmet_language_server = {},
         unocss = {},
         rust_analyzer = {},
         mdx_analyzer = {},
