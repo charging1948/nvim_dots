@@ -475,6 +475,15 @@ require('lazy').setup({
       --  So, we create new capabilities with blink.cmp, and then broadcast that to the servers.
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
+      local vue_language_server_path = vim.fn.expand '$MASON/packages' .. '/vue-language-server' .. '/node_modules/@vue/language-server'
+      local tsserver_filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
+      local vue_plugin = {
+        name = '@vue/typescript-plugin',
+        location = vue_language_server_path,
+        languages = { 'vue' },
+        configNamespace = 'typescript',
+      }
+
       -- Enable the following language servers
       --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
       --
@@ -518,6 +527,17 @@ require('lazy').setup({
         dockerls = {},
         ['docker_compose_language_service'] = {},
         qmlls = {},
+
+        vue_ls = {},
+
+        ts_ls = {
+          init_options = {
+            plugins = {
+              vue_plugin,
+            },
+          },
+          filetypes = tsserver_filetypes,
+        },
 
         lua_ls = {
           -- cmd = { ... },
@@ -589,6 +609,9 @@ require('lazy').setup({
       end
 
       enable_server 'nixd'
+
+      enable_server 'ts_ls'
+      enable_server 'vue_ls'
 
       require('mason-lspconfig').setup {
         handlers = {
