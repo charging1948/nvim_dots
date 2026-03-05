@@ -538,7 +538,7 @@ require('lazy').setup({
           },
           filetypes = tsserver_filetypes,
         },
-
+        eslint = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -612,6 +612,7 @@ require('lazy').setup({
 
       enable_server 'ts_ls'
       enable_server 'vue_ls'
+      enable_server 'eslint'
 
       require('mason-lspconfig').setup {
         handlers = {
