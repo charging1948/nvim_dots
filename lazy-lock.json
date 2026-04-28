@@ -36,7 +36,7 @@
   "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },
   "nvim-sops": { "branch": "main", "commit": "1791eec21e78c9736ae504f02712a2f509c69b2c" },
   "nvim-surround": { "branch": "main", "commit": "61319d4bd1c5e336e197defa15bd104c51f0fb29" },
-  "nvim-treesitter": { "branch": "master", "commit": "cf12346a3414fa1b06af75c79faebe7f76df080a" },
+  "nvim-treesitter": { "branch": "main", "commit": "df7489eeea351bece7fd0f9c825be5cb6a1438f0" },
   "opencode.nvim": { "branch": "main", "commit": "0e3ae21c6c4c8def63e3503b238870f1251288e4" },
   "otter.nvim": { "branch": "main", "commit": "a455e68a99d395889ab30a25ac3846a135e93c46" },
   "outline.nvim": { "branch": "main", "commit": "c293eb56db880a0539bf9d85b4a27816960b863e" },

@@ -848,14 +848,20 @@ require('lazy').setup({
     dependencies = { 'neovim-treesitter/treesitter-parser-registry' },
     lazy = false,
     build = ':TSUpdate',
+    branch = 'main',
     config = function()
-      require('nvim-treesitter').setup {
-        install_dir = vim.fn.stdpath 'data' .. '/site',
-      }
-
       require('nvim-treesitter').install {
-        'bash', 'c', 'diff', 'html', 'lua', 'luadoc',
-        'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc',
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
         'ruby',
       }
 

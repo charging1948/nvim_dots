@@ -13,7 +13,7 @@ return {
     end,
     event = 'LspAttach',
     dependencies = {
-      'nvim-treesitter/nvim-treesitter', -- optional
+      'neovim-treesitter/nvim-treesitter', -- optional
     },
   },
 }
