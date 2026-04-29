@@ -25,8 +25,14 @@ return {
         notification = {
           wo = { wrap = true }, -- Wrap notifications
         },
+        zen = {
+          backdrop = { transparent = false },
+          width = 0,
+        },
       },
-      zen = { enabled = true },
+      zen = {
+        enabled = true,
+      },
     },
     keys = {
       -- Top Pickers & Explorer
